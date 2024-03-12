@@ -4,7 +4,7 @@ import subprocess
 
 def run_sign_language_recognition():
     try:
-        subprocess.Popen(["python", "HandTrackingModule.py"])
+        subprocess.Popen(["python", "inference.py"])
     except FileNotFoundError:
         messagebox.showerror("Error", "Sign language recognition script not found!")
 
